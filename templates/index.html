@@ -1,0 +1,28 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Hello World Map{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXbJg6CDBy6EoPtdSSoSqzmdaB0VLPDQ4&callback=initMap" async defer></script>
+<script src="{{url_for('.static', filename='jquery.min.js')}}"></script>
+<script src="{{url_for('.static', filename='bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='bootbox.js')}}"></script>
+<script src="{{url_for('.static', filename='index.js')}}"></script>
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="shortcut icon" href="http://www.programmableweb.com/sites/default/files/pwfav.png" type="image/png" />
+<link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+{% endblock %}
+
+{% block content %}
+
+{% if not authorized %}
+<div id="login">
+    <button class="btn btn-default btn-lg" onclick="location.href='/authorize'">Authorize Coffee Shop Picker</button>
+</div>
+{% endif %}
+
+<div id="map-display"/>
+{% endblock %}

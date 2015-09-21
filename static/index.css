@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map-display {
+    height: 100%;
+}
+
+#login {
+    margin:0 auto;
+    position: absolute;
+    left:70%;
+    top:20%;
+    z-index: 99;
+}
+
+.contextmenu{
+  border-radius: 2px;
+  visibility:hidden;
+  background: #FAFAFA;
+  border:1px solid #8888FF;
+  z-index: 10;
+  position: relative;
+  width: 175px;
+  font-size: small;
+  text-align: center;
+}
+
