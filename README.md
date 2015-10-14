@@ -1,1 +1,1 @@
-A simple Flask Web application that demonstrates integrating with the Facebook Graph API, put together to support this tutorial on ProgrammableWeb.
+A simple Flask Web application that demonstrates integrating with the Facebook Graph API, put together to support [this tutorial](http://www.programmableweb.com/news/how-to-build-facebook-hello-world-web-app-python/how-to/2015/10/05) on ProgrammableWeb.
